@@ -330,6 +330,10 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: Montserrat;
+}
+
 /* =============
     Buttons
 ============= */
@@ -360,3 +364,54 @@ textarea {
 /* =============
     Footer
 ============= */
+#hero {
+  background-image: url("../img/hero.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center bottom;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 75vh;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    height: 70vh;
+  }
+}
+#hero #overlay {
+  background-color: rbga(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero #overlay h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#hero #overlay span {
+  color: red;
+}
+#hero button {
+  border: none;
+  margin-top: 24px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#hero button i {
+  margin-left: 8px;
+}
+#hero button:hover {
+  transition: 0.2s;
+  color: red;
+  font-size: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
