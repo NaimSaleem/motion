@@ -10,15 +10,6 @@ html {
 /* =============
     Variables
 ============= */
-:root {
-  --white: #fff;
-  --black: #000;
-  --charcoal: #383838;
-  --aqua: #2ee6ef;
-  --yellow: #efe22e;
-  --red: #ef4b2e;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -27,8 +18,10 @@ html {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /* Sections
@@ -63,9 +56,12 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
@@ -73,8 +69,10 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
@@ -91,9 +89,12 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
@@ -111,8 +112,10 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -162,10 +165,14 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -173,7 +180,8 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -182,7 +190,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -231,12 +240,18 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
@@ -259,8 +274,10 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -276,8 +293,10 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -292,8 +311,10 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
@@ -331,11 +352,29 @@ template {
 /* =============
     Base
 ============= */
+body ul {
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Comfortaa", cursive;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 /* =============
@@ -362,40 +401,549 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  #nav-container ul {
+    display: flex;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li {
+    align-items: center;
+    border-right: 2px solid #222222;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    color: #000;
+  }
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #F8C832;
+}
+#nav-container ul li:first-child {
+  border: none;
+  display: none;
+}
+@media (min-width: 768px) {
+  #nav-container ul li:first-child {
+    display: list-item;
+  }
+}
+#nav-container ul li:last-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
+header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header > div {
+  display: grid;
+  grid-template-areas: "burger survival" "nav nav";
+  grid-template-columns: 20% auto;
+}
+@media (min-width: 1024px) {
+  header > div {
+    grid-template-areas: "nav survival";
+    grid-template-columns: 20% auto;
+  }
+}
+header > div #button-container {
+  grid-area: survival;
+  padding: 10px;
+  text-align: right;
+}
+header > div #button-container button {
+  background-color: #F8C832;
+  border-radius: 23px;
+  color: #000;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  transition: 0.25s;
+}
+header > div #button-container button:hover {
+  background-color: #000;
+  color: #fff;
+}
+header > div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  padding: 10px;
+}
+@media (min-width: 1024px) {
+  header > div #burger-container {
+    display: none !important;
+  }
+}
+header > div #burger-container i {
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+header > div #nav-container {
+  background-color: #222222;
+  display: none;
+  grid-area: nav;
+  padding: 20px 10px 10px;
+}
+@media (min-width: 1024px) {
+  header > div #nav-container {
+    background-color: #fff;
+    display: block !important;
+  }
+}
+
 /* =============
     Footer
 ============= */
-#section-1 {
-  background-color: var(--aqua);
-  height: 100vh;
+footer {
+  background-color: #F8C832;
+  display: grid;
+  grid-template-areas: ". footer .";
+  grid-template-columns: 10px auto 10px;
+  padding: 45px 0 40px;
+  text-align: center;
+}
+footer > div {
+  grid-area: footer;
+}
+footer > div h1 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+footer > div h1 span {
+  color: #fff;
+}
+footer > div ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+footer > div ul li {
+  margin: 0 10px;
+}
+footer > div ul li a:link,
+footer > div ul li a:visited {
+  color: #000;
+  font-size: 1.875rem;
+  transition: 0.25s;
+}
+footer > div ul li a:link:hover, footer > div ul li a:link:active,
+footer > div ul li a:visited:hover,
+footer > div ul li a:visited:active {
+  color: #fff;
 }
 
-#section-2 {
-  background-color: var(--charcoal);
-  height: 100vh;
+/* =============
+    Hero 
+============= */
+#hero {
+  background-image: url("../img/hero/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 360px;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 683px;
+  }
+}
+
+/* =============
+    History
+============= */
+#history {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". history .";
+  padding: 60px 0;
+}
+@media (min-width: 1024px) {
+  #history {
+    grid-template-columns: auto 60% auto;
+    padding: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #history {
+    grid-template-columns: auto 800px auto;
+  }
+}
+#history > div {
+  grid-area: history;
+}
+#history > div #history-first {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #history > div #history-first {
+    display: grid;
+    grid-template-areas: ". history-first .";
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 768px) {
+  #history > div #history-first > div {
+    grid-area: history-first;
+  }
+}
+#history > div #history-first > div h1 {
+  color: #F8C832;
+  font-family: "Comfortaa", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.875rem;
+  margin: 40px 0 30px;
+}
+@media (min-width: 768px) {
+  #history > div #history-first > div h1 {
+    font-size: 3.4375rem;
+    line-height: 3.5rem;
+    margin-bottom: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-first > div h1 {
+    font-size: 4.125rem;
+  }
+}
+#history > div #history-first > div h1 span {
+  display: block;
+  font-size: 1.9375rem;
+}
+@media (min-width: 768px) {
+  #history > div #history-first > div h1 span {
+    font-size: 2.625rem;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-first > div h1 span {
+    font-size: 3.375rem;
+  }
+}
+#history > div #history-first > div h4 {
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  #history > div #history-middle {
+    display: grid;
+    grid-template-areas: ". history-middle .";
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-middle > div {
+    grid-area: history-middle;
+  }
+}
+#history > div #history-middle > div p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  margin-top: 25px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #history > div #history-middle > div p {
+    line-height: 1.625rem;
+    margin-top: 34px;
+  }
+}
+@media (min-width: 768px) {
+  #history > div #history-last {
+    display: grid;
+    grid-template-areas: ". history-last .";
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-last {
+    grid-template-columns: 15% auto 15%;
+  }
+}
+@media (min-width: 768px) {
+  #history > div #history-last > div {
+    grid-area: history-last;
+  }
+}
+#history > div #history-last > div h3 {
+  font-size: 1rem;
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  #history > div #history-last > div h3 {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-last > div h3 {
+    margin-top: 100px;
+  }
+}
+#history > div #history-last > div p {
+  line-height: 1.375rem;
+  text-align: justify;
+}
+
+/* =============
+    Skills
+============= */
+@media (min-width: 1200px) {
+  #skills {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". skills-container .";
+  }
+}
+@media (min-width: 1024px) {
+  #skills > div {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #skills > div {
+    grid-area: skills-container;
+  }
+}
+#skills > div aside {
+  background-image: url("../img/skills/robot.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 380px;
+}
+@media (min-width: 768px) {
+  #skills > div aside {
+    height: 476px;
+  }
+}
+@media (min-width: 1024px) {
+  #skills > div aside {
+    height: auto;
+  }
+}
+#skills > div #skills-content {
+  background-color: #222222;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". skills .";
+  padding: 60px 0;
+  grid-template-columns: 10px auto 10px;
+  padding: 60px 0;
+}
+@media (min-width: 768px) {
+  #skills > div #skills-content {
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #skills > div #skills-content {
+    padding: 25px 0 44px;
+  }
+}
+#skills > div #skills-content > div {
+  grid-area: skills;
+  text-decoration: none;
+  transition: 0.25s;
+}
+#skills > div #skills-content > div h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.3125rem;
+  line-height: 1.625rem;
+  margin-bottom: 35px;
+}
+#skills > div #skills-content > div p {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  display: inline-block;
+}
+#skills > div #skills-content > div ul li {
+  margin-top: 46px;
+}
+@media (min-width: 768px) {
+  #skills > div #skills-content > div ul li {
+    margin-top: 51px;
+  }
+}
+#skills > div #skills-content > div ul li .top {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../img/hero.jpg");
+}
+#skills > div #skills-content > div ul li .top h5 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+#skills > div #skills-content > div ul li .top h4 {
+  font-size: 1.125rem;
+  margin-left: auto;
+}
+#skills > div #skills-content > div ul li .bottom {
+  background-color: #000;
+  height: 9px;
+  margin-top: 5px;
+  width: 100%;
+}
+#skills > div #skills-content > div ul li .bottom > div {
+  background-color: #F8C832;
+  height: 9px;
+}
+#skills > div #skills-content > div ul #emotion .yellow-bar {
+  width: 64%;
+}
+#skills > div #skills-content > div ul #learning .yellow-bar {
+  width: 90%;
+}
+#skills > div #skills-content > div ul #math .yellow-bar {
+  width: 95%;
+}
+
+/* =============
+    Hero 2
+============= */
+#hero-2 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-2 .";
+}
+@media (min-width: 1200px) {
+  #hero-2 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#hero-2 img {
+  grid-area: hero-2;
+  width: 100%;
+}
+
+/* =============
+    Skynet
+============= */
+#skynet {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". skynet .";
+}
+@media (min-width: 768px) {
+  #skynet {
+    padding: 54px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #skynet {
+    padding: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #skynet {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#skynet > div {
+  grid-area: skynet;
+}
+#skynet > div ul {
+  display: grid;
+  grid-area: section-5;
+  grid-gap: 20px;
+  grid-template-areas: "gallery-7" "gallery-1" "gallery-1" "gallery-6" "gallery-3";
+  grid-template-rows: repeat(5, 235px);
+}
+@media (min-width: 768px) {
+  #skynet > div ul {
+    grid-template-areas: "gallery-1 gallery-3" "gallery-1 gallery-7" "gallery-5 gallery-6";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 277px);
+  }
+}
+@media (min-width: 1024px) {
+  #skynet > div ul {
+    grid-template-areas: "gallery-1 gallery-5 gallery-2" "gallery-1 gallery-7 gallery-4" "gallery-6 gallery-3 gallery-4";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#skynet > div ul li {
+  background-position: center;
   background-size: cover;
 }
-#section-2 #box {
-  height: 100px;
-  width: 100px;
-  background-color: var(--red);
-  border: 3px solid var(--white);
+#skynet > div ul #gallery-1 {
+  background-image: url("../img/skynet/gallery-1.jpg");
+  grid-area: gallery-1;
 }
-
-#section-3 {
-  background-color: var(--yellow);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+#skynet > div ul #gallery-2 {
+  background-image: url("../img/skynet/gallery-2.jpg");
+}
+@media (min-width: 1024px) {
+  #skynet > div ul #gallery-2 {
+    grid-area: gallery-2;
+  }
+}
+#skynet > div ul #gallery-3 {
+  background-image: url("../img/skynet/gallery-3.jpg");
+  background-position: center top;
+  grid-area: gallery-3;
+}
+#skynet > div ul #gallery-4 {
+  background-image: url("../img/skynet/gallery-4.jpg");
+}
+@media (min-width: 1024px) {
+  #skynet > div ul #gallery-4 {
+    grid-area: gallery-4;
+  }
+}
+#skynet > div ul #gallery-5 {
+  background-image: url("../img/skynet/gallery-5.jpg");
+}
+@media (min-width: 768px) {
+  #skynet > div ul #gallery-5 {
+    grid-area: gallery-5;
+  }
+}
+#skynet > div ul #gallery-6 {
+  background-image: url("../img/skynet/gallery-6.jpg");
+  grid-area: gallery-6;
+}
+#skynet > div ul #gallery-7 {
   align-items: center;
+  color: #F8C832;
+  display: flex;
+  font-family: "Pacifico", cursive;
+  grid-area: gallery-7;
+  justify-content: center;
+}
+#skynet > div ul #gallery-7 h1 {
+  font-size: 2.6875rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #skynet > div ul #gallery-7 h1 {
+    font-size: 2.875rem;
+  }
 }
