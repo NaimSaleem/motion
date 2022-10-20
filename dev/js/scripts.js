@@ -1,5 +1,42 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
+
+
+function scrollAnimation(){
+    var tl = gsap.timeline();
+    tl.to("#picture", {
+        duration: 1,
+        x: 100,
+        rotation: 360,
+        scrollTrigger: {
+            trigger: "#picture",
+            // toggleActions: "restart pause reverse pause",
+            markers:true,
+            start: "0px 20%",
+            end: "100% 10%",
+            scrub: 1,
+            pin: true
+        }
+    })
+    .to("#quote1", {
+
+        duration: 1,
+        x: 100,
+        sctrollTrigger:{
+            trigger: "#quote1",
+            toggleActions: "restart pause reverse pause",
+            markers: true,
+            start: "0px 5%",
+            end: "100% 10%",
+            scrub: true,
+            pin: true
+        }
+
+    });
+    return tl;
+}
 
 function heroAnimation(){
     var tl = gsap.timeline();
@@ -13,7 +50,7 @@ function heroAnimation(){
 
 var mainTL = gsap.timeline();
 mainTL.add(heroAnimation());
-
+mainTL.add(scrollAnimation());
 var heroSizeNumber = 1;
 
 let mm = gsap.matchMedia();

@@ -1,0 +1,22 @@
+#recipe{
+    margin-top: rem-calc(220);
+    margin-bottom: rem-calc(220);
+    display: grid;
+    grid-template-columns: 10% auto 5% auto 10%;
+    grid-template-areas: ". one . two .";
+    
+
+    #steps{
+        justify-content: left;
+        grid-area: one;
+    }
+
+    #picture{
+        justify-content: right;
+        height: 30vh;
+        width: 20vw;
+        background-size: cover;
+        grid-area: two;
+        background-image: url('../img/pasta.jpg');
+    }
+}

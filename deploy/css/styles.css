@@ -366,18 +366,18 @@ textarea {
 ============= */
 #hero {
   background-image: url("../img/hero.jpg");
-  height: 80vh;
+  height: 60vh;
   background-size: cover;
   background-position: center bottom;
 }
 @media (min-width: 768px) {
   #hero {
-    height: 75vh;
+    height: 55vh;
   }
 }
 @media (min-width: 1024px) {
   #hero {
-    height: 70vh;
+    height: 50vh;
   }
 }
 #hero #overlay {
@@ -389,7 +389,7 @@ textarea {
   text-align: center;
 }
 #hero #overlay h1 {
-  font-size: 3.75rem;
+  font-size: 3.125rem;
   font-weight: 300;
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -397,12 +397,12 @@ textarea {
   #hero #overlay h1 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    font-size: 5rem;
+    font-size: 3.75rem;
   }
 }
 @media (min-width: 1024px) {
   #hero #overlay h1 {
-    font-size: 5.625rem;
+    font-size: 4.0625rem;
   }
 }
 #hero #overlay span {
@@ -425,4 +425,40 @@ textarea {
   transition: 0.2s;
   color: red;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+#recipe {
+  margin-top: 13.75rem;
+  margin-bottom: 13.75rem;
+  display: grid;
+  grid-template-columns: 10% auto 5% auto 10%;
+  grid-template-areas: ". one . two .";
+}
+#recipe #steps {
+  justify-content: left;
+  grid-area: one;
+}
+#recipe #picture {
+  justify-content: right;
+  height: 30vh;
+  width: 20vw;
+  background-size: cover;
+  grid-area: two;
+  background-image: url("../img/pasta.jpg");
+}
+
+#pastaquote {
+  background-color: rgb(213, 79, 72);
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-areas: ". one .";
+  justify-content: center;
+}
+#pastaquote #quote {
+  padding-top: 13.75rem;
+  padding-bottom: 13.75rem;
+  align-self: center;
+  font-size: larger;
+  color: white;
+  grid-area: one;
 }

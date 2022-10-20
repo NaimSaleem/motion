@@ -34,6 +34,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/pasta.jpg" : {
+      "ft" : 16384,
+      "iS" : 133444,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pasta.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -59,6 +72,46 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/pastaquote.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/pastaquote.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/pastaquote.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/pastaquote.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/recipe.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/recipe.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/underhero.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/underhero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/underhero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/underhero.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -272,6 +325,51 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_pastaquote.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_pastaquote.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_recipe.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_recipe.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_underhero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_underhero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -797,7 +895,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/node_modules\/gsap\/index.js",
       "oF" : 0,
       "sC" : 3,

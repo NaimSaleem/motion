@@ -1,0 +1,19 @@
+#pastaquote{
+    background-color: rgb(213, 79, 72);
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-areas: ". one .";
+    justify-content: center;
+    
+
+
+
+    #quote{
+        padding-top: rem-calc(220);
+        padding-bottom: rem-calc(220);
+        align-self: center;
+        font-size: larger;
+        color: white;
+        grid-area: one;
+    }
+}
