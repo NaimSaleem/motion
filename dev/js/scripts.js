@@ -7,31 +7,42 @@ gsap.registerPlugin(ScrollTrigger);
 function scrollAnimation(){
     var tl = gsap.timeline();
     tl.to("#picture img", {
-        duration: 1,
-        y: 700,
+        duration: 2,
         scrollTrigger: {
-            trigger: "#picture",
-            start: "top 50%",
-            end: "center 20%",
+            trigger: "#img1",
+            start: "top 60%",
             markers: true,
-            scrub: 1.15
+            pin: true
+            
         }
     })
     .to("#img1",{
-        duration: 1,
+        duration: 4,
         opacity: 0,
         scrollTrigger: {
-            trigger: "#picture",
-            start: "top 40%",
-            end: "center 20%",
+            trigger: "#img2",
+            start: "top 60%",
+            end: "center -40%",
             markers: true,
-            scrub: true
-
+            scrub: true,
+            pin: "#img2"
 
     }
 })
+    .to("#img2",{
+        duration: 4,
+        scrollTrigger: {
+            trigger: "#img2",
+            start: "top 1%",
+            markers: true,
+            scrub: true,
+            pin: true
+        }
+
+    })
     .to("#quote1", {
         duration: 1,
+        opacity: '100%',
         x: 100,
         scrollTrigger: {
             trigger: "#quote1",
@@ -41,7 +52,102 @@ function scrollAnimation(){
             scrub: 1
         }
     })
-    
+    .from("#pastaintro", {
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#pastaintro",
+            start: "top 40%",
+            end: "center 20%",
+            markers: true,
+            scrub: true
+        }
+        
+
+    })
+    .from("#pastatext", {
+        duration: 1,
+        opacity: 0,
+        scrollTrigger:{
+            trigger: "#pastaintro",
+            start: "top 40%",
+            end: "center 20%",
+            markers: true,
+            scrub: true
+        }
+    })
+    .from("#title1",{
+        duration: 0.5, 
+        x: -100,
+        alpha: 0,
+        scrollTrigger:{
+            trigger: "#title1",
+            start: "top 40%",
+            end: "center 20%",
+            markers: true,
+            scrub: true
+        }
+    })
+    .from("#ingredientsteps",{
+        duration: 0.5, 
+        x: 100,
+        alpha: 0,
+        scrollTrigger:{
+            trigger: "#ingredientsteps",
+            start: "top 60%",
+            end: "center 20%",
+            markers: true,
+            scrub: 2
+        }
+    })
+    .from("#title2",{
+        duration: 0.5, 
+        x: -100,
+        alpha: 0,
+        scrollTrigger:{
+            trigger: "#title2",
+            start: "top 40%",
+            end: "center 20%",
+            markers: true,
+            scrub: true
+        }
+    })
+    .from("#pastasteps",{
+        duration: 0.5, 
+        x: 100,
+        alpha: 0,
+        scrollTrigger:{
+            trigger: "#pastasteps",
+            start: "top 60%",
+            end: "center 20%",
+            markers: true,
+            scrub: 2
+        }
+    })
+    .from("#title3",{
+        duration: 0.5, 
+        x: -100,
+        alpha: 0,
+        scrollTrigger:{
+            trigger: "#title3",
+            start: "top 40%",
+            end: "center 20%",
+            markers: true,
+            scrub: true
+        }
+    })
+    .from("#saucesteps",{
+        duration: 0.5, 
+        x: 100,
+        alpha: 0,
+        scrollTrigger:{
+            trigger: "#saucesteps",
+            start: "top 60%",
+            end: "center 20%",
+            markers: true,
+            scrub: 2
+        }
+    })
     ;
     return tl;
 }
@@ -60,18 +166,22 @@ var mainTL = gsap.timeline();
 mainTL.add(heroAnimation());
 mainTL.add(scrollAnimation());
 var heroSizeNumber = 1;
+// var pastaScroll = 1400;
 
 let mm = gsap.matchMedia();
 
 mm.add("(min-width: 768px)", () => {
 
     heroSizeNumber = 1.2;
+    // pastaScroll = 1500;
 
 });
 
 mm.add("(max-width: 767px)", () => {
 
     heroSizeNumber = 1.1;   
+    // pastaScroll = 1450;
+
 
 });
 

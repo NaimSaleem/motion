@@ -439,6 +439,8 @@ textarea {
   background-color: rgb(213, 79, 72);
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
+  line-height: 40px;
+  text-align: center;
 }
 #underhero #intro {
   color: white;
@@ -458,6 +460,22 @@ textarea {
   grid-template-columns: 10% auto 5% auto 10%;
   grid-template-areas: ". one . two .";
   line-height: 40px;
+  background-color: rgb(83, 121, 83);
+  color: white;
+  font-size: 12px;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+@media (min-width: 400px) {
+  #recipe {
+    font-size: 12px;
+    font-weight: 800;
+  }
+}
+@media (min-width: 768px) {
+  #recipe {
+    font-size: 16px;
+  }
 }
 #recipe #steps {
   justify-content: left;
@@ -466,16 +484,32 @@ textarea {
 #recipe #steps #title2 {
   margin-top: 90px;
 }
+#recipe #steps #title3 {
+  margin-top: 90px;
+}
 #recipe #picture {
   justify-content: right;
   background-size: cover;
 }
 #recipe #picture img {
-  height: 30vh;
-  width: 20vw;
+  height: 50vh;
+  width: 30vw;
   grid-area: two;
   position: absolute;
 }
+@media (min-width: 400px) {
+  #recipe #picture img {
+    height: 20vh;
+    width: 20vh;
+  }
+}
+@media (min-width: 768px) {
+  #recipe #picture img {
+    height: 50vh;
+    width: 30vw;
+  }
+}
+
 #pastaquote {
   background-color: rgb(213, 79, 72);
   display: grid;
