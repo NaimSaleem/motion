@@ -6,35 +6,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 function scrollAnimation(){
     var tl = gsap.timeline();
-    tl.to("#picture", {
+    tl.to("#picture img", {
         duration: 1,
-        x: 100,
-        rotation: 360,
+        y: 700,
         scrollTrigger: {
             trigger: "#picture",
-            // toggleActions: "restart pause reverse pause",
-            markers:true,
-            start: "0px 20%",
-            end: "100% 10%",
-            scrub: 1,
-            pin: true
+            start: "top 50%",
+            end: "center 20%",
+            markers: true,
+            scrub: 1.15
         }
     })
-    .to("#quote1", {
+    .to("#img1",{
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#picture",
+            start: "top 40%",
+            end: "center 20%",
+            markers: true,
+            scrub: true
 
+
+    }
+})
+    .to("#quote1", {
         duration: 1,
         x: 100,
-        sctrollTrigger:{
+        scrollTrigger: {
             trigger: "#quote1",
-            toggleActions: "restart pause reverse pause",
+            start: "top 80%",
+            end: "top 40%",
             markers: true,
-            start: "0px 5%",
-            end: "100% 10%",
-            scrub: true,
-            pin: true
+            scrub: 1
         }
-
-    });
+    })
+    
+    ;
     return tl;
 }
 

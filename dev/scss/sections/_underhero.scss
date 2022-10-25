@@ -1,0 +1,24 @@
+#underhero{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem-calc(220);
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: ". one .";
+    background-color: rgb(213, 79, 72);
+    padding-top: rem-calc(100);
+    padding-bottom: rem-calc(100);
+
+    #intro{
+        color: white;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-justify: center;
+        }
+        grid-area: one;
+    }
+}

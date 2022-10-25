@@ -427,26 +427,55 @@ textarea {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+#underhero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13.75rem;
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  grid-template-areas: ". one .";
+  background-color: rgb(213, 79, 72);
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+#underhero #intro {
+  color: white;
+  grid-area: one;
+}
+#underhero #intro h1 {
+  text-align: center;
+}
+#underhero #intro p {
+  text-justify: center;
+}
+
 #recipe {
   margin-top: 13.75rem;
   margin-bottom: 13.75rem;
   display: grid;
   grid-template-columns: 10% auto 5% auto 10%;
   grid-template-areas: ". one . two .";
+  line-height: 40px;
 }
 #recipe #steps {
   justify-content: left;
   grid-area: one;
 }
+#recipe #steps #title2 {
+  margin-top: 90px;
+}
 #recipe #picture {
   justify-content: right;
+  background-size: cover;
+}
+#recipe #picture img {
   height: 30vh;
   width: 20vw;
-  background-size: cover;
   grid-area: two;
-  background-image: url("../img/pasta.jpg");
+  position: absolute;
 }
-
 #pastaquote {
   background-color: rgb(213, 79, 72);
   display: grid;
@@ -455,7 +484,7 @@ textarea {
   justify-content: center;
 }
 #pastaquote #quote {
-  padding-top: 13.75rem;
+  padding-top: 7.5rem;
   padding-bottom: 13.75rem;
   align-self: center;
   font-size: larger;
