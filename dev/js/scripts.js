@@ -35,7 +35,6 @@ function patternMotion(){
             rotate: 360,
             transformOrigin: "center",
             stagger: 0.1,
-            ease: Bounce.easeOut,
             scale: 2
 
         })
@@ -47,7 +46,6 @@ function patternMotion(){
             rotate: 360,
             transformOrigin: "center",
             stagger: 0.1,
-            ease: Bounce.easeOut,
             scale: 2
         })
         .to(".red",{
