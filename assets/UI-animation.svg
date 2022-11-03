@@ -1,16 +1,40 @@
 <svg width="1264" height="611" viewBox="0 0 1264 611" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="UI-animation">
 <rect width="1264" height="611" fill="white"/>
-<g id="play-button-svgrepo-com 1" clip-path="url(#clip0_33_2)">
-<g id="Group">
-<path id="Vector" d="M760.654 299.172L578.787 175.172C576.25 173.452 572.976 173.262 570.265 174.692C567.561 176.122 565.867 178.933 565.867 182V430C565.867 433.067 567.561 435.878 570.273 437.308C571.48 437.953 572.811 438.267 574.133 438.267C575.762 438.267 577.39 437.779 578.787 436.828L760.654 312.828C762.911 311.291 764.267 308.736 764.267 306C764.267 303.264 762.911 300.709 760.654 299.172ZM582.4 414.351V197.649L741.327 306L582.4 414.351Z" fill="black"/>
-<path id="Vector_2" d="M632 58C495.253 58 384 169.253 384 306C384 442.747 495.253 554 632 554C768.747 554 880 442.747 880 306C880 169.253 768.747 58 632 58ZM632 537.467C504.371 537.467 400.533 433.629 400.533 306C400.533 178.371 504.371 74.5333 632 74.5333C759.629 74.5333 863.467 178.371 863.467 306C863.467 433.629 759.629 537.467 632 537.467Z" fill="black"/>
+<circle id="Ellipse 1" cx="597" cy="306" r="189" stroke="black" stroke-width="14"/>
+<path id="Polygon 1" d="M707.5 311.543L547.394 409.583C543.063 412.235 537.5 409.118 537.5 404.039L537.5 207.96C537.5 202.882 543.063 199.765 547.394 202.417L707.5 300.457C711.641 302.992 711.641 309.008 707.5 311.543Z" stroke="black" stroke-width="13"/>
+<g id="Rectangle 23">
+<rect x="669.861" y="79.3258" width="116" height="43" rx="21.5" transform="rotate(75 669.861 79.3258)" fill="#FCFEA2"/>
+<rect x="669.861" y="79.3258" width="116" height="43" rx="21.5" transform="rotate(75 669.861 79.3258)" stroke="black" stroke-width="6"/>
+<rect x="669.861" y="79.3258" width="116" height="43" rx="21.5" transform="rotate(75 669.861 79.3258)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="669.861" y="79.3258" width="116" height="43" rx="21.5" transform="rotate(75 669.861 79.3258)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="669.861" y="79.3258" width="116" height="43" rx="21.5" transform="rotate(75 669.861 79.3258)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="669.861" y="79.3258" width="116" height="43" rx="21.5" transform="rotate(75 669.861 79.3258)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
 </g>
+<g id="Rectangle 24">
+<rect x="825.038" y="134.235" width="116" height="43" rx="21.5" transform="rotate(127.954 825.038 134.235)" fill="#FCFEA2"/>
+<rect x="825.038" y="134.235" width="116" height="43" rx="21.5" transform="rotate(127.954 825.038 134.235)" stroke="black" stroke-width="6"/>
+<rect x="825.038" y="134.235" width="116" height="43" rx="21.5" transform="rotate(127.954 825.038 134.235)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="825.038" y="134.235" width="116" height="43" rx="21.5" transform="rotate(127.954 825.038 134.235)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="825.038" y="134.235" width="116" height="43" rx="21.5" transform="rotate(127.954 825.038 134.235)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="825.038" y="134.235" width="116" height="43" rx="21.5" transform="rotate(127.954 825.038 134.235)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
 </g>
+<g id="Rectangle 25">
+<rect x="870" y="285" width="116" height="43" rx="21.5" transform="rotate(-180 870 285)" fill="#FCFEA2"/>
+<rect x="870" y="285" width="116" height="43" rx="21.5" transform="rotate(-180 870 285)" stroke="black" stroke-width="6"/>
+<rect x="870" y="285" width="116" height="43" rx="21.5" transform="rotate(-180 870 285)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="870" y="285" width="116" height="43" rx="21.5" transform="rotate(-180 870 285)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="870" y="285" width="116" height="43" rx="21.5" transform="rotate(-180 870 285)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="870" y="285" width="116" height="43" rx="21.5" transform="rotate(-180 870 285)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
 </g>
-<defs>
-<clipPath id="clip0_33_2">
-<rect width="496" height="496" fill="white" transform="translate(384 58)"/>
-</clipPath>
-</defs>
+<g id="Rectangle 26">
+<rect x="766.902" y="425.861" width="116" height="43" rx="21.5" transform="rotate(-120 766.902 425.861)" fill="#FCFEA2"/>
+<rect x="766.902" y="425.861" width="116" height="43" rx="21.5" transform="rotate(-120 766.902 425.861)" stroke="black" stroke-width="6"/>
+<rect x="766.902" y="425.861" width="116" height="43" rx="21.5" transform="rotate(-120 766.902 425.861)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="766.902" y="425.861" width="116" height="43" rx="21.5" transform="rotate(-120 766.902 425.861)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="766.902" y="425.861" width="116" height="43" rx="21.5" transform="rotate(-120 766.902 425.861)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+<rect x="766.902" y="425.861" width="116" height="43" rx="21.5" transform="rotate(-120 766.902 425.861)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
+</g>
+<path id="Vector 3" d="M736.339 268.129L818.003 326.32L795.452 351.083L723.933 277.605L721.196 274.793L720.529 278.66L714.266 314.984L683.227 233.838L776.389 256.355L737.092 264.542L732.615 265.475L736.339 268.129Z" fill="white" stroke="black" stroke-width="4"/>
+</g>
 </svg>

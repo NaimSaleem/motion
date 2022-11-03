@@ -391,4 +391,5 @@ textarea {
 }
 #drawSVG-container .drawSVG .svg svg {
   width: 100%;
+  transform-box: fill-box;
 }
