@@ -35,6 +35,20 @@
 <rect x="766.902" y="425.861" width="116" height="43" rx="21.5" transform="rotate(-120 766.902 425.861)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
 <rect x="766.902" y="425.861" width="116" height="43" rx="21.5" transform="rotate(-120 766.902 425.861)" stroke="black" stroke-opacity="0.2" stroke-width="6"/>
 </g>
-<path id="Vector 3" d="M736.339 268.129L818.003 326.32L795.452 351.083L723.933 277.605L721.196 274.793L720.529 278.66L714.266 314.984L683.227 233.838L776.389 256.355L737.092 264.542L732.615 265.475L736.339 268.129Z" fill="white" stroke="black" stroke-width="4"/>
+<g id="Ellipse 2" filter="url(#filter0_d_33_2)">
+<circle cx="702" cy="259" r="38" fill="#F9F6F6"/>
 </g>
+</g>
+<defs>
+<filter id="filter0_d_33_2" x="660" y="221" width="84" height="84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_33_2"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_33_2" result="shape"/>
+</filter>
+</defs>
 </svg>

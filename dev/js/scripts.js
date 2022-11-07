@@ -66,19 +66,21 @@ function patternMotion(){
 
 function UIMotion(){
     var tl = gsap.timeline()
-        tl.from("circle",{
+        tl.from("#Ellipse-1",{
             transformOrigin: "center",
             duration: 2,
             drawSVG: 0,
             scale: 2
 
         })
+       
         tl.from("#Polygon-1",{
             duration: 0.5,
             drawSVG: 0
 
-        })
-        tl.from("#Vector-3",{
+        },"triangle")
+        
+        tl.from("#Ellipse-2",{
             duration: 1.5,
             x: 100,
             delay: 1,
@@ -94,26 +96,38 @@ function UIMotion(){
             duration: 0.4,
             opacity: 0,
             scale: 1,
-            delay: 0.2,
-            stroke: 0 
+            stroke: 0,
+            rotate: -45,
+            fill: "orange"
+
         },"sparkleLeave")
         tl.to("#Polygon-1",{
             duration: 0.2,
             fill: "white"
         },"sparkleLeave")
-        tl.to("circle",{
+        tl.to("#Ellipse-1",{
             duration: 0.2,
             fill: "red"
         },"sparkleLeave")
-        tl.to("circle",{
+        tl.to("#Polygon-1",{
+            transformOrigin: "center",
+            duration: 0.2,
+            drawSVG: "50% 50%"
+        },"sparkleLeave")
+        tl.to("#Ellipse-1",{
             transformOrigin: "center",
             scale: 1.2
-        },"mouseHover+=1.5")
+        },"sparkleLeave")
         tl.to("#Polygon-1",{
             transformOrigin: "center",
             scale: 1.2
-        },"mouseHover+=1.5")
-        tl.to("#Vector-3",{
+        },"sparkleLeave")
+        tl.to("#Ellipse-1",{
+            transformOrigin: "center",
+            duration: 0.2,
+            drawSVG: "50% 50%"
+        },"sparkleLeave")
+        tl.to("#Ellipse-2",{
             duration:0.5,
             x: 200,
             delay: 1,
