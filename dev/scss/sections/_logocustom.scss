@@ -1,33 +1,30 @@
-#drawSVG-container{
-    min-height: 100vh;
+#logocustom{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto 50% auto;
+    grid-template-areas: 
+    ". . ."
+    ". logocustom ."
+    ". . .";
+    grid-template-rows: 20% auto 20%;
+    height: 100vh;
 
-    .drawSVG{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        
+    >div{
+        grid-area: logocustom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .title{
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
-        .svg{
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            svg{
-                width: 100%;
-                transform-box: fill-box;
+        svg{
+            scale: 2;
+            #Group-1{
+
             }
-        }
-    }
 
-    .grow-right{
-        // display: none;
+            // width: 50%;
+            
+        }
     }
 }
+
+    
