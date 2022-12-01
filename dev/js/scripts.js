@@ -59,9 +59,6 @@ function ahoyAnimation(){
             scale: 1
         },"lettermove")
 
-        tl.to(".letters",{
-            ease: "elastic.out(1, 0.75)"
-        },"lettermove")
 
         
         tl.to("#Rectangle_1",{
