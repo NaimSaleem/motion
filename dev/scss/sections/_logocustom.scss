@@ -6,7 +6,7 @@
     ". logocustom ."
     ". . .";
     grid-template-rows: 20% auto 20%;
-    height: 100vh;
+    height: 50vh;
 
     >div{
         grid-area: logocustom;
@@ -15,15 +15,15 @@
         align-items: center;
 
 
-        svg{
-            scale: 2;
-            #Group-1{
+        // svg{
+        //     scale: 2;
+        //     #logo-custom{
 
-            }
+        //     }
 
-            // width: 50%;
+        //     // width: 50%;
             
-        }
+        // }
     }
 }
 
