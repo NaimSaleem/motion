@@ -49,14 +49,18 @@ function ahoyAnimation(){
 
         tl.from(".letters",{
             duration: 0.6,
-            stagger: 0.05,
+            stagger: 0.03,
             x: "+=50",
             opacity: 0
 
         },"lettermove")
         tl.from(".letters",{
-            duration: 1,
-            scale: 2
+            duration: 0.3,
+            scale: 1
+        },"lettermove")
+
+        tl.to(".letters",{
+            ease: "elastic.out(1, 0.75)"
         },"lettermove")
 
         
