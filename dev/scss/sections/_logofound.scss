@@ -1,0 +1,28 @@
+#logofound{
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-areas: 
+    ". . ."
+    ". logofound ."
+    ". . .";
+    grid-template-rows: 20% auto 20%;
+    height: 100vh;
+
+    >div{
+        grid-area: logofound;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        svg{
+            scale: 2;
+            #Group-1{
+
+            }
+
+            // width: 50%;
+            
+        }
+    }
+}
