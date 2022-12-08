@@ -8,102 +8,74 @@ import { CustomEase } from "gsap/CustomEase";
 
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MotionPathPlugin, CustomEase);
 
-// var wiggles = 10; //tweak this to whatever number you want. 
-
-// //create the custom eases..
-// CustomWiggle.create("Wiggle.easeOut", {wiggles:wiggles, type:"easeOut"});
-// CustomWiggle.create("Wiggle.easeInOut", {wiggles:wiggles, type:"easeInOut"});
-// CustomWiggle.create("Wiggle.anticipate", {wiggles:wiggles, type:"anticipate"});
-// CustomWiggle.create("Wiggle.uniform", {wiggles:wiggles, type:"uniform"});
-// CustomWiggle.create("Wiggle.random", {wiggles:wiggles, type:"random"});
 
 function ahoyAnimation(){
     var tl = gsap.timeline();
-    tl.to("#ahoylogo",{
+    tl.to(".ahoylogo",{
         duration: 0.002,
         x: 400, 
         rotate: 90,
         opacity: 0,
-        scale: 2,
+        scale: 1.5,
         transformOrigin: "center"
     })
-    tl.from("#ahoylogo",{
+    tl.from(".ahoylogo",{
         duration: 0.02,
         opacity: 0
-        
-        
-
     })
-    tl.from("#Vector1",{
+
+    tl.from(".ahoylogo",{
         duration: 1,
         drawSVG: 0
         
     })
-    tl.to("#Vector1",{
+
+
+    tl.to(".ahoylogo",{
         duration: 0.9,
-        rotate: -90,
-        y: 200,
-        scale: 0.5,
-        transformOrigin: "center"
+        rotate: 0,
+        x: "-=400",
+        scale: 1,
+        transformOrigin: "center",
+        ease: "back.out(1.7)"
     },"lettermove")
 
         tl.from(".letters",{
-            duration: 0.6,
+            delay: 0.5,
+            duration: 0.3,
             stagger: 0.03,
             x: "+=50",
-            opacity: 0
-
+            opacity: 0,
+            ease: "back.out(0.6)"
         },"lettermove")
         tl.from(".letters",{
+            delay: 0.5,
             duration: 0.3,
-            scale: 1
+            scale: 1.5
+            
         },"lettermove")
 
 
-        
-        tl.to("#Rectangle_1",{
-            delay: 2,
+        tl.to(".whitemask",{
             duration: 1,
-            x: "+=1400"
-        },"colorchange")
+            ease: "power3.out",
+            x: 3000
+            
+        })
 
-        tl.to("#Rectangle_2",{
-            delay: 2,
+        tl.to(".bluemask",{
             duration: 1,
-            x: "+=1400"
-        },"colorchange2")
+            ease: "power3.out",
+            x: 3000
+        },"bluemove")
+        // tl.to("#ahoylogo1",{
+        //     x: 3000
+        // },"bluemove")
 
-        tl.to("#Rectangle_3",{
-            delay: 2,
+        tl.to(".lastmask",{
             duration: 1,
-            x: "+=1400"
-        },"colorchange3")
-
-        tl.to(".letters",{
-            delay: 2,
-            fill: "#24323E",
-            stagger: 0.02
-        },"colorchange")
-
-        tl.to(".letters",{
-            delay:2,
-            fill: "#FFFFFF",
-            stagger: 0.02
-        },"colorchange3")
-        
-        tl.to("#Vector1",{
-            delay: 2,
-            stroke: "#24323E"
-        },"colorchange2")
-
-        tl.to("#Vector1",{
-            delay: 2,
-            stroke: "#E0B562"
-        },"colorchange3")
-
-        tl.to(".letters",{
-            duration: 4,
-            opacity: 100
+            ease: "power3.out",
+            x: 3000
         })
 
     return tl;
